@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/static/img/inverselogo.png">
+
+    <title>HackShanghai - Reimbursement</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/cover.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h2 id="register-title">
+      <img src="/static/img/white-blue-logo.png">
+    </h2>
+
+    <div id="register-container">
+      <div class="centered">
+        <p>Please fill out the form for reimbursement (by bank transfer).</p>
+        <p>请完成此表格以作报销之用（报销形式为银行转账）</p>
+        <p><strong>Deadline: Nov 27, 2014</strong></p>
+        <p><strong>截止日期：2014.11.27</strong></p>
+      </div>
+
+      <form id="followup-form" role="form" action="https://formkeep.com/f/8357653b6c4f" accept-charset="UTF-8" method="POST">
+        <div class="form-group">
+          <label class="control-label">Full Name 姓名</label>
+          <input type="text" class="form-control" name="fullname" placeholder="Name 姓名">
+        </div>
+        <div class="form-group">
+          <label class="control-label">Email 电子邮件</label>
+          <input type="email" class="form-control" name="email" placeholder="Email 电子邮件">
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">
+            I traveled to Shanghai from
+            从什么城市抵达上海
+          </label>
+          <select class="form-control" name="city">
+            <option>Baotou 包头</option>
+            <option>Beijing 北京</option>
+            <option>Changsha 长沙</option>
+            <option>Changzhou 常州</option>
+            <option>Chengdu 成都</option>
+            <option>Dalian 大连</option>
+            <option>Fuzhou 福州</option>
+            <option>Guangzhou 广州</option>
+            <option>Guilin 桂林</option>
+            <option>Hangzhou 杭州</option>
+            <option>Harbin 哈尔滨</option>
+            <option>Hefei 合肥</option>
+            <option>Hong Kong 香港</option>
+            <option>Huzhou 湖州</option>
+            <option>Kunming 昆明</option>
+            <option>Maanshan 马鞍山</option>
+            <option>Nanchang 南昌</option>
+            <option>Nanjing 南京</option>
+            <option>Shandong 山东</option>
+            <option>Shanghai 上海</option>
+            <option>Shenyang 沈阳</option>
+            <option>Suzhou 苏州</option>
+            <option>Weifang 潍坊</option>
+            <option>Wuhan 武汉</option>
+            <option>Xi'an 西安</option>
+            <option>Xiamen 厦门</option>
+            <option>Zhenjiang 镇江</option>
+            <option>Zhuhai 珠海</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Approximate Reimbursement Amount 报销费用 <i class="glyphicon glyphicon-question-sign" title="This is just an estimate. We'll calculate the exact amount from the documentation you send us."></i></label>
+          <div class="input-group">
+            <span class="input-group-addon">¥</span>
+            <input type="text" class="form-control" name="cost" placeholder="1000">
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="form-group">
+          <label class="control-label">
+            My bank is located
+            是否为境内银行账户？
+          </label>
+          <select class="form-control" name="bank-country" id="bank-country">
+            <option>In China</option>
+            <option>Outside China</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="beneficiary-name-cn">
+          <label class="control-label">Beneficiary's Name 收款人账户名 <i class="glyphicon glyphicon-question-sign" title="Please make sure whether the beneficiary’s name is in Chinese or English. If it is in English, confirm the order of last and first name, with or without space between last and first name, in capital or lowercase letters."></i></label>
+          <input type="text" class="form-control" name="beneficiary-name-cn" placeholder="收款人账户名">
+        </div>  
+        <div class="form-group" id="beneficiary-bankname-cn">
+          <label class="control-label">Bank and Branch Name 收款人开户银行名称（请具体到分行或支行）</label>
+          <input type="text" class="form-control" name="beneficiary-bankname-cn" placeholder="收款人开户银行名称">
+        </div>  
+        <div class="form-group" id="beneficiary-account-cn">
+          <label class="control-label">Bank Account Number 收款人开户银行帐号</label>
+          <input type="text" class="form-control" name="beneficiary-account-cn" placeholder="收款人开户银行帐号">
+        </div>  
+        <div class="form-group" id="beneficiary-location-cn">
+          <label class="control-label">Bank Location (Province and City) 收款人开户银行所在地（请具体到省份和市）</label>
+          <input type="text" class="form-control" name="beneficiary-location-cn" placeholder="收款人开户银行所在地">
+        </div>  
+
+        <div class="form-group" id="beneficiary-name-en" style="display:none">
+          <label class="control-label">Beneficiary's Name</label>
+          <input type="text" class="form-control" name="beneficiary-name-en" placeholder="Beneficiary's Name">
+        </div>  
+        <div class="form-group" id="beneficiary-address-en" style="display:none">
+          <label class="control-label">Beneficiary's Residence Address</label>
+          <input type="text" class="form-control" name="beneficiary-address-en" placeholder="Beneficiary's Residence Address">
+        </div>  
+        <div class="form-group" id="beneficiary-account-en" style="display:none">
+          <label class="control-label">Bank Account Number</label>
+          <input type="text" class="form-control" name="beneficiary-account-en" placeholder="Bank Account Number">
+        </div>  
+        <div class="form-group" id="beneficiary-bankname-en" style="display:none">
+          <label class="control-label">Bank Name</label>
+          <input type="text" class="form-control" name="beneficiary-bankname-en" placeholder="Bank Name">
+        </div>  
+        <div class="form-group" id="beneficiary-bankaddress-en" style="display:none">
+          <label class="control-label">Bank Address</label>
+          <input type="text" class="form-control" name="beneficiary-bankaddress-en" placeholder="Bank Address">
+        </div>  
+        <div class="form-group" id="beneficiary-swift-en" style="display:none">
+          <label class="control-label">Swift code or IBAN number</label>
+          <input type="text" class="form-control" name="beneficiary-swift-en" placeholder="Swift code or IBAN number">
+        </div>  
+
+        <hr />
+
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="mailed" required="" data-bv-field="mailed"> I have mailed the required <a href="/travel.html" target="_blank"> reimbursement information</a>.
+              <br />
+              我已邮寄出<a href="/travel.html" target="_blank">报销材料</a>。
+            </label>
+          </div>
+        </div>
+
+        <input type="hidden" name="utf8" value="✓">
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/static/js/jquery-2.1.1.min.js"></script>   
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+      $('#bank-country').change(function() {
+        if ($('#bank-country').val() == 'In China') {
+          $("#beneficiary-name-cn").show();
+          $("#beneficiary-bankname-cn").show();
+          $("#beneficiary-account-cn").show();
+          $("#beneficiary-location-cn").show();
+          $("#beneficiary-name-en").hide();
+          $("#beneficiary-address-en").hide();
+          $("#beneficiary-account-en").hide();
+          $("#beneficiary-bankname-en").hide();
+          $("#beneficiary-bankaddress-en").hide();
+          $("#beneficiary-swift-en").hide();
+        } else {
+          $("#beneficiary-name-cn").hide();
+          $("#beneficiary-bankname-cn").hide();
+          $("#beneficiary-account-cn").hide();
+          $("#beneficiary-location-cn").hide();
+          $("#beneficiary-name-en").show();
+          $("#beneficiary-address-en").show();
+          $("#beneficiary-account-en").show();
+          $("#beneficiary-bankname-en").show();
+          $("#beneficiary-bankaddress-en").show();
+          $("#beneficiary-swift-en").show();
+        }
+      });
+
+      $('i').tooltip();
+    </script>
+
+  </body>
+</html>
